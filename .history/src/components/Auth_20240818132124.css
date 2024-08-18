@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.auth-form input {
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.auth-form button {
+  padding: 15px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #6e8efb;
+  color: white;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #5a74d4;
+}
+
+.auth-options {
+  margin-top: 20px;
+  color: white;
+}
+
+.google-signup, .facebook-signup {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+}
+
+.google-signup {
+  background-color: #4285F4;
+  color: white;
+}
+
+.facebook-signup {
+  background-color: #3B5998;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .auth-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .auth-form input, .auth-form button {
+    padding: 10px;
+  }
+}
